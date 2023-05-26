@@ -3,6 +3,26 @@ import "./styles.css";
 
 const questions = [
   {
+    question: "Grand Central Terminal, Park Avenue, New York is the world's",
+    options: [
+      "largest railway station",
+      "highest railway station",
+      "longest railway station",
+      "None of the above",
+    ],
+    answer: "largest railway station",
+  },
+  {
+    question: "Entomology is the science that studies",
+    options: [
+      "Behavior of human beings",
+      "Insects",
+      "The origin and history of technical and scientific terms",
+      "The formation of rocks",
+    ],
+    answer: "Insects",
+  },
+  {
     question: "What is the capital of France?",
     options: ["Paris", "London", "Berlin", "Rome"],
     answer: "Paris",
