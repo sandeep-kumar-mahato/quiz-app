@@ -1,4 +1,3 @@
-/* App container */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -119,4 +118,61 @@ button:hover {
 
 .result .motivation {
     color: blue;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 330px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .question {
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="radio"] {
+        margin-right: 8px;
+    }
+
+    /* Quiz result */
+    .result {
+        width: 300px;
+        margin-top: 40px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        animation: slide-up 0.5s ease;
+        opacity: 0.9;
+    }
+
+    .result h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333333;
+    }
+
+    .result p {
+        margin: 0;
+        font-size: 18px;
+        color: #333333;
+    }
+
+    .result .success {
+        color: green;
+    }
+
+    .result .motivation {
+        color: blue;
+    }
 }
