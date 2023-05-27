@@ -1,50 +1,49 @@
+/* Navbar */
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0 2%;
+}
+
+nav {
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: 2% auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255);
-    color: purple;
+    color: antiquewhite;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     opacity: 0.9;
 }
 
-/* Quiz question */
+.container p {
+    font-size: 2rem;
+}
 
 .question {
-    border: 2px solid red;
-    border-radius: 5px;
-    animation: animatedBorder 4s linear infinite;
-    text-align: left;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
     padding: 20px;
-}
-
-@keyframes animatedBorder {
-    0% {
-        border-color: red;
-    }
-
-    25% {
-        border-color: blue;
-    }
-
-    50% {
-        border-color: green;
-    }
-
-    75% {
-        border-color: yellow;
-    }
-
-    100% {
-        border-color: red;
-    }
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+    text-align: left;
+    border: 2px solid antiquewhite;
+    border-radius: 5px;
 }
 
 /* Options list */
@@ -53,7 +52,7 @@ ul {
     padding: 0;
 }
 
-li {
+.options {
     margin-bottom: 15px;
 }
 
@@ -61,30 +60,33 @@ li {
 label {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
 /* Radio button */
 input[type="radio"] {
     margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+    accent-color: rgb(182, 127, 54);
 }
 
 /* Button */
 button {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 24px;
-    background-color: purple;
-    color: #ffffff;
+    padding: 18px 150px;
+    background-color: antiquewhite;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(141, 0, 141);
+    background-color: rgb(195, 179, 158);
 }
 
 /* Quiz result */
@@ -93,22 +95,26 @@ button:hover {
     margin-top: 40px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: antiquewhite;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: slide-up 0.5s ease;
     opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .result h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 2rem;
     color: #333333;
 }
 
 .result p {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.5rem;
     color: #333333;
 }
 
@@ -121,10 +127,28 @@ button:hover {
 }
 
 @media (max-width: 900px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2% 0;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+
     .container {
-        width: 330px;
+        width: 93%;
         margin: 0 auto;
         padding: 10px;
+    }
+
+    .container p {
+        font-size: 1.3rem;
     }
 
     .question {
@@ -136,7 +160,7 @@ button:hover {
     }
 
     label {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     input[type="radio"] {

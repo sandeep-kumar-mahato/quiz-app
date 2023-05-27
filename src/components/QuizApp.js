@@ -92,7 +92,6 @@ const QuizApp = () => {
 
     return (
       <div className="container">
-        <h2 className="animated-title">Quiz App</h2>
         <p>
           Question {currentQuestion + 1} of {questions.length}
         </p>
@@ -100,7 +99,7 @@ const QuizApp = () => {
           <p>{currentQuiz.question}</p>
           <ul>
             {currentQuiz.options.map((option) => (
-              <li key={option}>
+              <li className="options" key={option}>
                 <label>
                   <input
                     type="radio"
